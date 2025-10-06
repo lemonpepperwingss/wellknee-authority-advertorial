@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en" dir="ltr" class="tw-scroll-smooth">
 <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>Why 73% of Knee Pain Patients Never Had to Suffer | WellKnee Insider</title>
     <meta name="description" content="Sports medicine doctor reveals the professional solution for knee pain that 73% of patients never knew existed. Get 70% off WellKnee patches today.">
     <meta name="keywords" content="knee pain relief, arthritis, joint pain, WellKnee patches, natural pain relief, sports medicine">
@@ -32,31 +36,22 @@
     src="https://www.facebook.com/tr?id=2324406347952889&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
-    <link rel="dns-prefetch preconnect" href="https://cdn11.bigcommerce.com/s-dn6ccjd40l" crossorigin>
-    <link rel="dns-prefetch preconnect" href="https://fonts.googleapis.com/" crossorigin>
-    <link rel="dns-prefetch preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link rel='canonical' href='https://wellknee.com/article/knee-pain-solution' />
-    <meta name='platform' content='bigcommerce.stencil' />
     
-    <link href="https://wellknee.com/favicon.ico" rel="shortcut icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <script>
-        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-    </script>
-    
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,500,400%7CKarla:400&display=block" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     
     <style>
-        body {
-            margin: 0px !important;
-            padding: 0px !important;
-            font-family: 'Karla', sans-serif;
-            line-height: 1.6;
-            color: #333;
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
         
-        .page {
+        body {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
             background: #fff;
         }
         
@@ -66,368 +61,317 @@
             padding: 0 20px;
         }
         
-        .page-content {
-            padding: 0;
-        }
-        
-        .advertorial-1 {
-            background: #fff;
-        }
-        
-        .advertorial {
-            background: #ff6b6b;
-            color: white;
-            text-align: center;
-            padding: 8px 0;
-            font-weight: bold;
-            font-size: 14px;
-        }
-        
-        .header-container {
-            background: #2c3e50;
+        /* Navigation */
+        .nav {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         
-        .headers {
+        .nav__holder {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
         }
         
-        .logo a {
-            color: white;
-            text-decoration: none;
-            font-size: 24px;
-            font-weight: bold;
-            font-family: 'Montserrat', sans-serif;
+        .nav__logo img {
+            height: 40px;
+            width: auto;
         }
         
-        .logo strong {
-            color: #3498db;
-        }
-        
-        .menu {
+        .nav__items {
             display: flex;
-            gap: 20px;
+            gap: 30px;
+            align-items: center;
         }
         
-        .menu a {
-            color: white;
+        .nav__item {
+            color: #2c3e50;
             text-decoration: none;
             font-weight: 500;
+            transition: color 0.3s ease;
         }
         
-        .menu a:hover {
-            color: #3498db;
+        .nav__item:hover {
+            color: #27ae60;
         }
         
-        .mobile-menu {
+        .nav__item--btn {
+            background: #3498db;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: white !important;
+            font-weight: 600;
+        }
+        
+        .nav__item--btn:hover {
+            background: #2980b9;
+            color: white !important;
+        }
+        
+        /* Mobile navigation */
+        .nav__toggle {
             display: none;
-            color: white;
-            font-size: 24px;
+            flex-direction: column;
             cursor: pointer;
+            gap: 4px;
         }
         
-        .mobile-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.9);
-            z-index: 1000;
-            padding: 50px 20px;
+        .nav__toggle-row {
+            width: 25px;
+            height: 3px;
+            background: #2c3e50;
+            transition: all 0.3s ease;
         }
         
-        .mobile-overlay.active {
-            display: block;
-        }
-        
-        .mobile-overlay a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            font-size: 24px;
-            margin: 20px 0;
-            text-align: center;
-        }
-        
-        .body {
-            background: #fff;
-        }
-        
-        .main-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .two-columns {
+        /* Main content */
+        .main-content {
             display: grid;
-            grid-template-columns: 1fr 300px;
-            gap: 40px;
+            grid-template-columns: 1fr 320px;
+            gap: 50px;
             padding: 40px 0;
+            max-width: 1000px;
+            margin: 0 auto;
         }
         
-        .main {
-            background: #fff;
+        .article-content {
+            background: white;
         }
         
-        .main-head {
-            margin-bottom: 40px;
+        .article-header {
+            margin-bottom: 30px;
         }
         
         .breadcrumbs {
             color: #666;
             font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .article-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #2c3e50;
+            line-height: 1.3;
+            margin-bottom: 25px;
+        }
+        
+        .rating-stars {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             margin-bottom: 20px;
         }
         
-        .main h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 36px;
-            font-weight: 700;
-            color: #2c3e50;
-            margin: 0 0 15px 0;
-            line-height: 1.2;
+        .stars {
+            height: 20px;
         }
         
-        .main h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 24px;
-            font-weight: 500;
-            color: #34495e;
-            margin: 0 0 20px 0;
-        }
-        
-        .main h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
-            font-weight: 500;
-            color: #34495e;
-            margin: 20px 0 15px 0;
-        }
-        
-        .article-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 20px 0;
-            padding: 15px 0;
-            border-top: 1px solid #eee;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .published {
+        .article-date {
             color: #666;
             font-size: 14px;
         }
         
-        .highlighted {
-            background: #f8f9fa;
-            padding: 20px;
-            border-left: 4px solid #3498db;
+        .article-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .article-body {
             font-size: 18px;
-            font-weight: 500;
+            line-height: 1.7;
+            color: #333;
+        }
+        
+        .article-body h2 {
+            font-size: 32px;
+            font-weight: 700;
             color: #2c3e50;
-            margin: 20px 0;
+            margin: 40px 0 25px 0;
+            line-height: 1.3;
         }
         
-        .main-body {
-            line-height: 1.8;
+        .article-body h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #34495e;
+            margin: 30px 0 20px 0;
+            line-height: 1.3;
         }
         
-        .main-body p {
-            margin-bottom: 20px;
-            font-size: 16px;
+        .article-body p {
+            margin-bottom: 25px;
+            font-size: 18px;
+            line-height: 1.7;
         }
         
-        .main-body ul {
-            margin: 20px 0;
+        .article-body ul {
+            margin: 25px 0;
             padding-left: 30px;
         }
         
-        .main-body li {
-            margin-bottom: 10px;
+        .article-body li {
+            margin-bottom: 15px;
+            font-size: 18px;
+            line-height: 1.7;
         }
         
-        .big-image {
-            width: 100%;
-            height: auto;
-            margin: 30px 0;
-            border-radius: 8px;
-        }
-        
-        .text-highlight {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 8px;
-            margin: 30px 0;
-            text-align: center;
-        }
-        
-        .text-highlight h1 {
-            color: white;
-            font-size: 28px;
-            margin: 0;
-        }
-        
-        .review {
+        .highlight-box {
             background: #f8f9fa;
+            border-left: 4px solid #3498db;
             padding: 20px;
-            border-left: 4px solid #27ae60;
-            margin: 20px 0;
-            font-style: italic;
-        }
-        
-        .reviewer {
-            display: block;
-            margin-top: 10px;
-            font-weight: bold;
-            color: #2c3e50;
-        }
-        
-        .offer {
-            background: #fff3cd;
-            border: 1px solid #ffeaa7;
-            padding: 20px;
-            border-radius: 8px;
             margin: 30px 0;
-        }
-        
-        .offer p {
-            margin-bottom: 10px;
+            border-radius: 0 8px 8px 0;
         }
         
         .cta-button {
             display: inline-block;
-            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            background: #27ae60;
             color: white;
-            padding: 15px 30px;
+            padding: 25px 35px;
             text-decoration: none;
             border-radius: 8px;
-            font-weight: bold;
-            font-size: 18px;
+            font-weight: 600;
+            font-size: 20px;
             text-align: center;
-            margin: 20px 0;
-            transition: transform 0.3s ease;
+            margin: 40px 0;
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 500px;
+            line-height: 1.4;
         }
         
         .cta-button:hover {
             transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4);
             color: white;
             text-decoration: none;
         }
         
-        .bellow-button {
-            text-align: center;
-            color: #666;
-            font-size: 14px;
-            margin-top: 10px;
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 15px 0;
+            flex-wrap: wrap;
         }
         
-        .side {
+        .trust-indicators span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(39, 174, 96, 0.1);
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            color: #27ae60;
+            font-weight: 500;
+        }
+        
+        /* Sidebar */
+        .sidebar {
             background: #f8f9fa;
             padding: 20px;
             border-radius: 8px;
             height: fit-content;
             position: sticky;
-            top: 20px;
+            top: 100px;
         }
         
-        .follow h3 {
-            margin-bottom: 15px;
+        .sidebar-title {
+            font-size: 22px;
+            font-weight: 700;
             color: #2c3e50;
-        }
-        
-        .social-media {
-            display: flex;
-            gap: 10px;
-        }
-        
-        .social-media a {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-decoration: none;
-        }
-        
-        .facebook {
-            background: #3b5998;
-        }
-        
-        .youtube {
-            background: #ff0000;
-        }
-        
-        .ad {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
+            margin-bottom: 25px;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            line-height: 1.3;
         }
         
-        .ad h1 {
-            font-size: 20px;
-            margin-bottom: 15px;
-            color: #2c3e50;
+        .sidebar-product {
+            text-align: center;
+            margin-bottom: 20px;
         }
         
-        .img-logo {
-            max-width: 120px;
+        .sidebar-product img {
+            width: 100%;
             height: auto;
+            border-radius: 8px;
             margin-bottom: 15px;
         }
         
-        .img-product {
-            max-width: 200px;
-            height: auto;
-            margin: 15px 0;
-        }
-        
-        .ad-bottom {
-            display: block;
+        .sidebar-cta {
             background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
             color: white;
-            padding: 12px 20px;
+            padding: 18px 20px;
             text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
             text-align: center;
-            margin: 15px 0;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        
+        .sidebar-cta:hover {
+            transform: translateY(-2px);
+            color: white;
+            text-decoration: none;
         }
         
         .featured-on {
-            margin-top: 20px;
+            margin-top: 30px;
+            text-align: center;
         }
         
         .featured-on h3 {
-            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 600;
             color: #2c3e50;
+            margin-bottom: 15px;
         }
         
-        .featured-on div {
+        .featured-logos {
             display: flex;
+            justify-content: center;
+            gap: 15px;
             flex-wrap: wrap;
-            gap: 10px;
         }
         
-        .featured-on img {
+        .featured-logos img {
             height: 30px;
             opacity: 0.7;
+            transition: opacity 0.3s ease;
         }
         
+        .featured-logos img:hover {
+            opacity: 1;
+        }
+        
+        /* Mobile sticky CTA */
+        .mobile-sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            padding: 15px;
+            text-align: center;
+            z-index: 999;
+            display: none;
+        }
+        
+        .mobile-sticky-cta a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        /* Footer */
         .footer {
             background: #2c3e50;
             color: white;
@@ -435,469 +379,517 @@
             margin-top: 60px;
         }
         
-        .footer-links {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
         }
         
-        .footer-links a {
+        .footer-section h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #3498db;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-section a {
             color: #bdc3c7;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
         
-        .footer-links a:hover {
+        .footer-section a:hover {
             color: white;
         }
         
-        .footer p {
+        .footer-bottom {
+            border-top: 1px solid #34495e;
+            padding-top: 20px;
+            text-align: center;
             font-size: 12px;
-            line-height: 1.5;
-            margin-bottom: 10px;
+            color: #bdc3c7;
         }
         
+        /* Responsive design */
         @media (max-width: 768px) {
-            .two-columns {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            
-            .main h1 {
-                font-size: 28px;
-            }
-            
-            .menu {
+            .nav__items {
                 display: none;
             }
             
-            .mobile-menu {
-                display: block;
+            .nav__toggle {
+                display: flex;
             }
             
-            .article-info {
-                flex-direction: column;
-                gap: 10px;
-                text-align: center;
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 20px 0;
             }
             
-            .side {
+            .article-title {
+                font-size: 32px;
+            }
+            
+            .article-subtitle {
+                font-size: 20px;
+            }
+            
+            .sidebar {
                 position: static;
             }
             
-            .cta-button {
-                font-size: 18px !important;
-                padding: 15px 20px !important;
-                min-height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+            .mobile-sticky-cta {
+                display: block;
             }
             
-            .big-image img {
-                max-width: 100% !important;
-                height: auto !important;
+            .trust-indicators {
+                flex-direction: column;
+                gap: 8px;
             }
             
-            .main-container {
-                padding: 0 15px !important;
-            }
-            
-            .main-body {
-                padding: 20px 15px !important;
+            .container {
+                padding: 0 15px;
             }
         }
         
-        /* Touch optimization */
-        .cta-button {
-            -webkit-tap-highlight-color: transparent;
-            touch-action: manipulation;
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         
-        /* Performance optimization */
-        .big-image img {
-            loading: lazy;
+        .article-content {
+            animation: fadeInUp 0.6s ease-out;
         }
         
-        .lazyload {
-            opacity: 0;
-            transition: opacity 0.3s;
+        /* Dynamic elements */
+        .timer {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 18px;
         }
         
-        .lazyloaded {
-            opacity: 1;
+        .inventory-count {
+            color: #e74c3c;
+            font-weight: bold;
         }
     </style>
 </head>
 
-<body class="type-page remove-cookie custom-article-template">
-    <div class="page index insider_template">
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
         <div class="container">
-            <div class="page-content page-content--centered custom-article-wellknee-knee-pain-solution">
-                <div class="advertorial-1">
-                    <div class="header-container">
-                        <div class="headers">
-                            <div class="logo"><a href="https://cycsrd.mcgo2.com/click"><img src="kneelanderimages/wellkneelogo.png" alt="WellKnee" style="height: 30px; width: auto;"></a></div>
-                            <div class="menu">
-                                <a href="https://cycsrd.mcgo2.com/click">Order</a> 
-                                <a href="https://cycsrd.mcgo2.com/click">About</a> 
-                                <a href="https://cycsrd.mcgo2.com/click">Contact</a>
-                            </div>
-                            <div class="mobile-menu">&nbsp;</div>
-                            <div class="mobile-overlay">
-                                <a href="https://cycsrd.mcgo2.com/click">Order</a> 
-                                <a href="https://cycsrd.mcgo2.com/click">About</a> 
-                                <a href="https://cycsrd.mcgo2.com/click">Contact</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="nav__holder">
+                <div class="nav__logo">
+                    <a href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');">
+                        <img src="kneelanderimages/wellkneelogo.png" alt="WellKnee" />
+                    </a>
+                </div>
+                <div class="nav__items">
+                    <a href="https://cycsrd.mcgo2.com/click" class="nav__item" onclick="fbq('track', 'Lead');">Order</a>
+                    <a href="https://cycsrd.mcgo2.com/click" class="nav__item" onclick="fbq('track', 'Lead');">About</a>
+                    <a href="https://cycsrd.mcgo2.com/click" class="nav__item" onclick="fbq('track', 'Lead');">Contact</a>
+                    <a href="https://cycsrd.mcgo2.com/click" class="nav__item nav__item--btn" onclick="fbq('track', 'Lead');">Order Now!</a>
+                </div>
+                <div class="nav__toggle">
+                    <div class="nav__toggle-row"></div>
+                    <div class="nav__toggle-row"></div>
+                    <div class="nav__toggle-row"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <!-- Article Content -->
+            <div class="article-content">
+                <div class="article-header">
+                    <div class="breadcrumbs">Health > Trending > Knee Pain Relief</div>
+                    <h1 class="article-title">Sports Medicine Doctor Exposes Why Your Knee Treatments Keep Failing (And the $17 Fix)</h1>
                     
-                    <div class="body">
-                        <div class="main-container two-columns">
-                            <div class="main">
-                                <div class="main-head">
-                                    <div class="breadcrumbs">Health > Trending > Knee Pain Relief</div>
-                                    <h1>Why 73% of Knee Pain Patients Never Had to Suffer</h1>
-                                    <h2>Sports Medicine Doctor Breaks 15-Year Silence About What Really Destroys Knees — And the Professional Solution Hidden From the Public</h2>
-                                    
-                                    <div style="text-align: center; margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 8px; border: 2px solid #ff6b35;">
-                                        <p style="font-size: 18px; font-weight: 600; margin-bottom: 15px; color: #333;">Skip the medical details? Get 70% off WellKnee patches now:</p>
-                                        <a class="cta-button" href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');" style="font-size: 20px; padding: 18px 35px;">GET 70% OFF NOW →</a>
-                                    </div>
-                                    
-                                    <div class="article-info">
-                                        <div class="published">January 15 2025 at 9:43 am</div>
-                                        <div>
-                                            <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62ceb8225cd20082"></script>
-                                            <div class="addthis_inline_share_toolbox">&nbsp;</div>
-                                        </div>
-                                    </div>
-                                    <div class="highlighted">Why exactly is everyone talking about this new knee pain therapy?</div>
-                                </div>
-                                
-                                <div class="main-body">
-                                    <div class="big-image">
-                                        <img src="kneelanderimages/download (8).png" alt="Dr. Chen - Knee Pain Expert" style="width: 100%; height: auto; border-radius: 8px;">
-                                    </div>
-                                    
-                                    <p>Active adults over 40 should have kept running, walking, living normally. They lost their mobility instead.</p>
-                                    
-                                    <p>If you've tried everything for knee pain and it keeps getting worse... If you're taking pills that fog your mind or hurt your stomach... If you've been told surgery is your only option... If you can't play with your kids or grandkids anymore...</p>
-                                    
-                                    <p>What I'm about to reveal could save you from years of unnecessary suffering.</p>
-                                    
-                                    <p><strong>73% of the knee patients I've treated over 15 years never needed to reach the point of desperation they did.</strong></p>
-                                    
-                                    <p>You'd think knee pain is about worn cartilage or aging joints. But this isn't about getting older.</p>
-                                    
-                                    <p><strong>It's about a biological process your doctor probably never explained — and the professional-grade solution we've been using privately for years.</strong></p>
-                                    
-                                    <div style="text-align: center; margin: 25px 0; padding: 15px; background: #fff3cd; border-radius: 8px; border-left: 4px solid #ff6b35;">
-                                        <p style="font-weight: 600; margin-bottom: 10px; color: #333;">Ready to learn the professional solution?</p>
-                                        <a class="cta-button" href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');">DISCOVER THE SECRET →</a>
-                                    </div>
-                                    
-                                    <h1>The Patient Who Changed Everything</h1>
-                                    
-                                    <p>I'm Dr. Michael Chen, sports medicine physician with 15 years treating professional athletes and weekend warriors.</p>
-                                    
-                                    <p>I thought I understood knee pain perfectly. Ice. Anti-inflammatories. Physical therapy. Cortisone when needed. Surgery as last resort.</p>
-                                    
-                                    <p>Then Sarah walked into my office.</p>
-                                    
-                                    <p>42 years old. Marathon runner. Perfect form. Ideal weight. Did everything right.</p>
-                                    
-                                    <p>Her knees were destroying themselves anyway.</p>
-                                    
-                                    <p><strong>Six months of textbook treatment. Zero improvement.</strong></p>
-                                    
-                                    <p>Watching this vibrant woman lose her identity to knee pain while following every protocol haunted me. The failure wasn't hers.</p>
-                                    
-                                    <p>It was mine. Medicine's. The entire system's.</p>
-                                    
-                                    <p>That night I made a decision: find the real answer or quit practicing.</p>
-                                    
-                                    <h1>The Investigation That Exposed Everything</h1>
-                                    
-                                    <p>I analyzed 500+ patient files. Interviewed colleagues at Johns Hopkins, Mayo Clinic, Cleveland Clinic.</p>
-                                    
-                                    <p>The pattern was shocking:</p>
-                                    
-                                    <p>* 87% of patients got temporary relief from standard treatments</p>
-                                    <p>* 91% saw pain return within 2-8 weeks</p>
-                                    <p>* 68% experienced progressive worsening despite treatment</p>
-                                    
-                                    <p>Then I found the smoking gun in a 2018 study from Seoul National University:</p>
-                                    
-                                    <p><strong>"Chronic knee pain is driven by a localized inflammatory feedback loop that systemic medications cannot adequately address."</strong></p>
-                                    
-                                    <p>Think about what this means.</p>
-                                    
-                                    <p>Your knee tissue gets irritated. It releases inflammatory markers. Those markers cause more irritation. Which releases more markers.</p>
-                                    
-                                    <p><strong>It's like a fire that keeps reigniting itself.</strong></p>
-                                    
-                                    <div class="big-image">
-                                        <img src="kneelanderimages/kneepainstock.png" alt="Knee Pain and Inflammation Diagram" style="width: 100%; height: auto; border-radius: 8px;">
-                                    </div>
-                                    
-                                    <p>Pills dilute through 60,000 miles of blood vessels. Maybe 5% reaches your knee.</p>
-                                    
-                                    <p>Creams sit on skin surface for 30 minutes.</p>
-                                    
-                                    <p>Ice constricts blood flow temporarily.</p>
-                                    
-                                    <p><strong>Nothing breaks the inflammatory loop long enough for tissue to actually heal.</strong></p>
-                                    
-                                    <p>Your instincts were right. The treatments felt inadequate because they ARE inadequate.</p>
-                                    
-                                    <div style="text-align: center; margin: 25px 0; padding: 15px; background: #f8d7da; border-radius: 8px; border-left: 4px solid #dc3545;">
-                                        <p style="font-weight: 600; margin-bottom: 10px; color: #721c24;">Tired of failed treatments?</p>
-                                        <a class="cta-button" href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');" style="background: #dc3545;">TRY THE PROFESSIONAL SOLUTION →</a>
-                                    </div>
-                                    
-                                    <h1>Why Everything You've Tried Was Doomed to Fail</h1>
-                                    
-                                    <p><strong>NSAIDs/Painkillers?</strong> Systemic dilution. Mask pain while inflammation continues. Stomach damage, kidney stress.</p>
-                                    
-                                    <p><strong>Topical Creams?</strong> Surface penetration only. 30-minute half-life. Can't reach deep tissue.</p>
-                                    
-                                    <p><strong>Cortisone Shots?</strong> Temporary suppression. Weakens tissue over time. Accelerates cartilage breakdown.</p>
-                                    
-                                    <p><strong>Physical Therapy?</strong> Strengthens muscles but doesn't address inflammatory cycle. Like rebuilding a house while it's on fire.</p>
-                                    
-                                    <p><strong>Ice/Heat?</strong> 20-minute relief. Actually slows healing by restricting blood flow.</p>
-                                    
-                                    <p><strong>Surgery?</strong> Treats end-stage damage, not the cause. 30% still have pain after.</p>
-                                    
-                                    <p>Every single approach fails to address the core mechanism: <strong>sustained local inflammation.</strong></p>
-                                    
-                                    <p>Meanwhile, sports medicine professionals have been quietly using something entirely different for their own families.</p>
-                                    
-                                    <h1>The Professional Secret We've Hidden</h1>
-                                    
-                                    <p>In 2019, I attended a sports medicine conference in Seoul.</p>
-                                    
-                                    <p>Korean team physicians revealed what they'd been using for decades: <strong>transdermal herbal patches with 8-hour sustained release.</strong></p>
-                                    
-                                    <p>Not pills that destroy your stomach. Not creams that barely penetrate. Not shots that weaken tissue.</p>
-                                    
-                                    <p><strong>Concentrated anti-inflammatory compounds delivered directly through the skin to inflamed tissue for 8 continuous hours.</strong></p>
-                                    
-                                    <div class="big-image">
-                                        <img src="kneelanderimages/download (10).png" alt="WellKnee Patch Product" style="width: 100%; height: auto; border-radius: 8px;">
-                                    </div>
-                                    
-                                    <p>The mechanism is elegantly simple:</p>
-                                    
-                                    <p>Wormwood, angelica, and ginger extracts penetrate the skin barrier. They bind to inflammatory receptors. They maintain therapeutic concentration for 8 hours straight.</p>
-                                    
-                                    <p>Long enough to actually break the inflammatory feedback loop.</p>
-                                    
-                                    <p><strong>It's like having a targeted anti-inflammatory IV drip, but through a simple patch.</strong></p>
-                                    
-                                    <p>This wasn't new technology. Korean athletes had used it since the 1988 Olympics.</p>
-                                    
-                                    <p>American professionals started importing it privately around 2010.</p>
-                                    
-                                    <p>We just never told the public.</p>
-                                    
-                                    <h1>The Company That Changed Everything</h1>
-                                    
-                                    <p>WellKnee became the first company to bring pharmaceutical-grade versions to the US market.</p>
-                                    
-                                    <p>Same formula Korean Olympic teams use. Same 8-hour sustained release. Same 73% reduction in inflammatory markers shown in studies.</p>
-                                    
-                                    <p>I started recommending them to patients who'd failed everything else.</p>
-                                    
-                                    <p><strong>Week 1:</strong> "My knees feel calmer, less angry."</p>
-                                    
-                                    <p><strong>Week 2:</strong> "I slept through the night without pain."</p>
-                                    
-                                    <p><strong>Week 3:</strong> "I walked upstairs carrying groceries."</p>
-                                    
-                                    <p><strong>Week 6:</strong> "I'm running again."</p>
-                                    
-                                    <p>In my practice:</p>
-                                    
-                                    <p>* 89 out of 100 patients reported significant improvement</p>
-                                    <p>* 71 reduced or eliminated oral medications</p>
-                                    <p>* 45 who were scheduled for surgery canceled it</p>
-                                    
-                                    <p>My own mother, 68, went from using a walker to hiking with her church group.</p>
-                                    
-                                    <div style="text-align: center; margin: 25px 0; padding: 15px; background: #d4edda; border-radius: 8px; border-left: 4px solid #28a745;">
-                                        <p style="font-weight: 600; margin-bottom: 10px; color: #155724;">Join 89% of patients who found relief.</p>
-                                        <a class="cta-button" href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');" style="background: #28a745;">GET YOUR RESULTS →</a>
-                                    </div>
-                                    
-                                    <h3>Verified Patient Results:</h3>
-                                    
-                                    <div class="review">
-                                        "My orthopedic surgeon canceled my knee replacement. Said whatever I'm doing, keep doing it. That was 8 months ago." 
-                                        <span class="reviewer">- Robert K., 54</span>
-                                    </div>
-                                    
-                                    <div class="review">
-                                        "Off Celebrex after 5 years. Liver enzymes back to normal. Knees feel better than they have since my 30s." 
-                                        <span class="reviewer">- Marie T., 49</span>
-                                    </div>
-                                    
-                                    <div class="review">
-                                        "Danced at my daughter's wedding. No cane. No chair. My family couldn't believe it." 
-                                        <span class="reviewer">- James L., 58</span>
-                                    </div>
-                                    
-                                    <div class="big-image">
-                                        <img src="kneelanderimages/testimonyt.png" alt="Customer Testimonials - WellKnee Pain Relief Patches" style="width: 100%; height: auto; border-radius: 8px;">
-                                    </div>
-                                    
-                                    <h1>This Changes Everything About Aging</h1>
-                                    
-                                    <p>We've accepted that knee pain is inevitable after 40.</p>
-                                    
-                                    <p>That losing mobility is "normal aging."</p>
-                                    
-                                    <p>That surgery is the only answer to deterioration.</p>
-                                    
-                                    <p><strong>This is medically false.</strong></p>
-                                    
-                                    <p>With proper inflammatory control, knees can remain functional into your 80s and beyond.</p>
-                                    
-                                    <p>The gap between what's possible and what people accept is measured in decades of unnecessary suffering.</p>
-                                    
-                                    <p><strong>You've lost years to a problem that takes weeks to address.</strong></p>
-                                    
-                                    <p>Every patient who comes to me after years of failed treatments says the same thing:</p>
-                                    
-                                    <p>"Why didn't anyone tell me about this sooner?"</p>
-                                    
-                                    <p>The answer makes me ashamed of my profession.</p>
-                                    
-                                    <h1>The Window Is Closing Fast</h1>
-                                    
-                                    <p>Something unexpected happened after WellKnee launched publicly.</p>
-                                    
-                                    <p>Professional athletes started buying retail supply. NBA trainers. NFL team doctors. Olympic committees.</p>
-                                    
-                                    <p>They know what works.</p>
-                                    
-                                    <p>Current inventory: <strong>2,300 units remaining from 10,000 unit production.</strong></p>
-                                    
-                                    <p>Next production: 12-16 weeks out.</p>
-                                    
-                                    <p>WellKnee offers what no one else will: <strong>90-day money-back guarantee.</strong></p>
-                                    
-                                    <p>They know the science. They know it works.</p>
-                                    
-                                    <p>Right now: <strong>70% discount for first-time customers.</strong></p>
-                                    
-                                    <p>Regular price: $59.83<br>
-                                    Your price: $17.95<br>
-                                    You save: $41.88</p>
-                                    
-                                    <p>One patch costs less than a single copay. Less than one bottle of Celebrex. Less than parking at the hospital.</p>
-                                    
-                                    <p><strong>The inflammatory loop is running right now.</strong> Tonight while you sleep. Tomorrow when you walk.</p>
-                                    
-                                    <p>Every day you wait is more accumulated damage.</p>
-                                    
-                                    <div class="offer">
-                                        <p><strong>YOU SHOULD KNOW:</strong> For a limited time WellKnee is running <strong>quantity discounts</strong> if you purchase multiple boxes:</p>
-                                        <p>Buy 1 box = $17.95 (70% off)<br /> 
-                                        Buy 2 boxes = $33.96 (Save even more)<br /> 
-                                        Buy 3 boxes = $45.96 (Best value)<br />
-                                        Buy 4 boxes = $55.96 (Maximum savings)</p>
-                                        <p>WellKnee buyers frequently return to buy extra boxes for all their favorite activities.</p>
-                                        <p><strong>Note:</strong> This quantity discount offer can end at any time, so make sure you don't miss it and act now.</p>
-                                        <p>And don't forget, WellKnee provides a full refund if you don't find relief with their products.</p>
-                                    </div>
-                                    
-                                    <a class="cta-button" href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');">CHECK AVAILABILITY</a>
-                                    <p class="bellow-button">Click the link above to see if WellKnee Patches are still offering quantity discounts</p>
-                                    
-                                    <h1>You Have 48 Hours to Decide</h1>
-                                    
-                                    <p>In 48 hours, this batch will sell out.</p>
-                                    
-                                    <p>You'll wait 12-16 weeks for the next one.</p>
-                                    
-                                    <p>That's 12-16 more weeks of:</p>
-                                    
-                                    <p>* Pills poisoning your system</p>
-                                    <p>* Creams that don't work</p>
-                                    <p>* Nights without sleep</p>
-                                    <p>* Life passing you by</p>
-                                    
-                                    <p>Or you can do what my patients did.</p>
-                                    
-                                    <p>What my mother did.</p>
-                                    
-                                    <p>What I did for my own knees.</p>
-                                    
-                                    <p><strong>Break the inflammatory loop. Reclaim your mobility. Get your life back.</strong></p>
-                                    
-                                    <p>The choice seems obvious.</p>
-                                    
-                                    <p>But only you can make it.</p>
-                                    
-                                    <a class="cta-button" href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');">CLAIM YOUR 70% DISCOUNT NOW</a>
-                                    
-                                </div>
-                            </div>
-                            
-                            <div class="side">
-                                <div class="follow">
-                                    <h3>Follow WellKnee</h3>
-                                    <div class="social-media">
-                                        <a class="facebook" href="https://www.facebook.com/wellknee" target="_blank">&nbsp;</a> 
-                                        <a class="youtube" href="https://www.youtube.com/wellknee" target="_blank">&nbsp;</a>
-                                    </div>
-                                </div>
-                                
-                                <div class="ad">
-                                    <a href="https://cycsrd.mcgo2.com/click"> 
-                                        <img class="img-logo" src="kneelanderimages/wellkneelogo.png" alt="WellKnee" style="height: 40px; width: auto;" />
-                                    </a>
-                                    <h1>End Knee Pain Effortlessly All Day</h1>
-                                    <a href="https://cycsrd.mcgo2.com/click">
-                                        <img src="kneelanderimages/sidebarimage.png" alt="Wellnee Herbal Knee Patch" class="img-product" style="width: 100%; height: auto; border-radius: 8px;">
-                                    </a>
-                                    <p>Get WellKnee Patches for comfortable, productive, and painless days every time.</p>
-                                </div>
-                                
-                                <a class="ad-bottom" href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');">CHECK AVAILABILITY</a>
-                                
-                            </div>
-                        </div>
-                        
-                        <div class="footer">
-                            <div class="main-container">
-                                <div class="footer-links">
-                                    <a href="#disclaimer" target="_blank">Disclaimer</a> 
-                                    <a href="#privacy" target="_blank">Privacy policy</a> 
-                                    <a href="#terms" target="_blank">Terms of service</a>
-                                </div>
-                                <p>THIS IS AN ADVERTISEMENT AND NOT AN ACTUAL NEWS ARTICLE, BLOG, OR CONSUMER PROTECTION UPDATE</p>
-                                <p>THE STORY DEPICTED ON THIS SITE AND THE PERSON DEPICTED IN THE STORY ARE NOT ACTUAL NEWS. RATHER, THIS STORY IS BASED ON THE RESULTS THAT SOME PEOPLE WHO HAVE USED THESE PRODUCTS HAVE ACHIEVED. THE RESULTS PORTRAYED IN THE STORY AND IN THE COMMENTS ARE ILLUSTRATIVE, AND MAY NOT BE THE RESULTS THAT YOU ACHIEVE WITH THESE PRODUCTS. THIS PAGE COULD RECEIVE COMPENSATION FOR CLICKS ON OR PURCHASE OF PRODUCTS FEATURED ON THIS SITE.</p>
-                                <div class="footer-links">
-                                    <p>Dr. Michael Chen practiced sports medicine in Baltimore 2008-2023. These statements reflect his professional experience and have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease. Results vary. Consult your physician before starting any new treatment.</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="rating-stars">
+                        <span class="article-date">January 15, 2025</span>
+                    </div>
+                </div>
+
+                <div class="article-body">
+                    <img src="kneelanderimages/header.webp" alt="Dr. Chen - Knee Pain Expert" class="article-image" />
+                    
+                    <h2>This is shocking but true...</h2>
+                    <p>Active adults over 40 should have kept running, walking, living normally. They lost their mobility instead.</p>
+                    
+                    <p>If you've tried everything for knee pain and it keeps getting worse... If you're taking pills that fog your mind or hurt your stomach... If you've been told surgery is your only option... If you can't play with your kids or grandkids anymore...</p>
+                    
+                    <p>What I'm about to reveal could save you from years of unnecessary suffering.</p>
+                    
+                    <p><strong>73% of the knee patients I've treated over 15 years never needed to reach the point of desperation they did.</strong></p>
+                    
+                    <p>You'd think knee pain is about worn cartilage or aging joints. But this isn't about getting older.</p>
+                    
+                    <p><strong>It's about a biological process your doctor probably never explained — and the professional-grade solution we've been using privately for years.</strong></p>
+                    
+                    <h2>The Patient Who Changed Everything</h2>
+                    
+                    <p>I'm Dr. Michael Chen, sports medicine physician with 15 years treating professional athletes and weekend warriors.</p>
+                    
+                    <p>I thought I understood knee pain perfectly. Ice. Anti-inflammatories. Physical therapy. Cortisone when needed. Surgery as last resort.</p>
+                    
+                    <p>Then Sarah walked into my office.</p>
+                    
+                    <p>42 years old. Marathon runner. Perfect form. Ideal weight. Did everything right.</p>
+                    
+                    <p>Her knees were destroying themselves anyway.</p>
+                    
+                    <p><strong>Six months of textbook treatment. Zero improvement.</strong></p>
+                    
+                    <p>Watching this vibrant woman lose her identity to knee pain while following every protocol haunted me. The failure wasn't hers.</p>
+                    
+                    <p>It was mine. Medicine's. The entire system's.</p>
+                    
+                    <p>That night I made a decision: find the real answer or quit practicing.</p>
+                    
+                    <h2>The Investigation That Exposed Everything</h2>
+                    
+                    <p>I analyzed 500+ patient files. Interviewed colleagues at Johns Hopkins, Mayo Clinic, Cleveland Clinic.</p>
+                    
+                    <p>The pattern was shocking:</p>
+                    
+                    <ul>
+                        <li>87% of patients got temporary relief from standard treatments</li>
+                        <li>91% saw pain return within 2-8 weeks</li>
+                        <li>68% experienced progressive worsening despite treatment</li>
+                    </ul>
+                    
+                    <p>Then I found the smoking gun in a 2018 study from Seoul National University:</p>
+                    
+                    <p><strong>"Chronic knee pain is driven by a localized inflammatory feedback loop that systemic medications cannot adequately address."</strong></p>
+                    
+                    <p>Think about what this means.</p>
+                    
+                    <p>Your knee tissue gets irritated. It releases inflammatory markers. Those markers cause more irritation. Which releases more markers.</p>
+                    
+                    <p><strong>It's like a fire that keeps reigniting itself.</strong></p>
+                    
+                    <img src="kneelanderimages/fire.webp" alt="Fire that keeps reigniting itself" class="article-image" />
+                    
+                    <p>Pills dilute through 60,000 miles of blood vessels. Maybe 5% reaches your knee.</p>
+                    
+                    <p>Creams sit on skin surface for 30 minutes.</p>
+                    
+                    <p>Ice constricts blood flow temporarily.</p>
+                    
+                    <p><strong>Nothing breaks the inflammatory loop long enough for tissue to actually heal.</strong></p>
+                    
+                    <p>Your instincts were right. The treatments felt inadequate because they ARE inadequate.</p>
+                    
+                    <h2>Why Everything You've Tried Was Doomed to Fail</h2>
+                    
+                    <p><strong>NSAIDs/Painkillers?</strong> Systemic dilution. Mask pain while inflammation continues. Stomach damage, kidney stress.</p>
+                    
+                    <p><strong>Topical Creams?</strong> Surface penetration only. 30-minute half-life. Can't reach deep tissue.</p>
+                    
+                    <p><strong>Cortisone Shots?</strong> Temporary suppression. Weakens tissue over time. Accelerates cartilage breakdown.</p>
+                    
+                    <p><strong>Physical Therapy?</strong> Strengthens muscles but doesn't address inflammatory cycle. Like rebuilding a house while it's on fire.</p>
+                    
+                    <p><strong>Ice/Heat?</strong> 20-minute relief. Actually slows healing by restricting blood flow.</p>
+                    
+                    <p><strong>Surgery?</strong> Treats end-stage damage, not the cause. 30% still have pain after.</p>
+                    
+                    <p>Every single approach fails to address the core mechanism: <strong>sustained local inflammation.</strong></p>
+                    
+                    <p>Meanwhile, sports medicine professionals have been quietly using something entirely different for their own families.</p>
+                    
+                    <h2>The Professional Secret We've Hidden</h2>
+                    
+                    <p>In 2019, I attended a sports medicine conference in Seoul.</p>
+                    
+                    <p>Korean team physicians revealed what they'd been using for decades: <strong>transdermal herbal patches with 8-hour sustained release.</strong></p>
+                    
+                    <p>Not pills that destroy your stomach. Not creams that barely penetrate. Not shots that weaken tissue.</p>
+                    
+                    <p><strong>Concentrated anti-inflammatory compounds delivered directly through the skin to inflamed tissue for 8 continuous hours.</strong></p>
+                    
+                    <img src="kneelanderimages/download (10).png" alt="WellKnee Patch Product" class="article-image" />
+                    
+                    <p>The mechanism is elegantly simple:</p>
+                    
+                    <p>Wormwood, angelica, and ginger extracts penetrate the skin barrier. They bind to inflammatory receptors. They maintain therapeutic concentration for 8 hours straight.</p>
+                    
+                    <p>Long enough to actually break the inflammatory feedback loop.</p>
+                    
+                    <p><strong>It's like having a targeted anti-inflammatory IV drip, but through a simple patch.</strong></p>
+                    
+                    <p>This wasn't new technology. Korean athletes had used it since the 1988 Olympics.</p>
+                    
+                    <p>American professionals started importing it privately around 2010.</p>
+                    
+                    <p>We just never told the public.</p>
+                    
+                    <h2>The Company That Changed Everything</h2>
+                    
+                    <p>WellKnee became the first company to bring pharmaceutical-grade versions to the US market.</p>
+                    
+                    <p>Same formula Korean Olympic teams use. Same 8-hour sustained release. Same 73% reduction in inflammatory markers shown in studies.</p>
+                    
+                    <p>I started recommending them to patients who'd failed everything else.</p>
+                    
+                    <p><strong>Week 1:</strong> "My knees feel calmer, less angry."</p>
+                    
+                    <p><strong>Week 2:</strong> "I slept through the night without pain."</p>
+                    
+                    <p><strong>Week 3:</strong> "I walked upstairs carrying groceries."</p>
+                    
+                    <p><strong>Week 6:</strong> "I'm running again."</p>
+                    
+                    <p>In my practice:</p>
+                    
+                    <ul>
+                        <li>89 out of 100 patients reported significant improvement</li>
+                        <li>71 reduced or eliminated oral medications</li>
+                        <li>45 who were scheduled for surgery canceled it</li>
+                    </ul>
+                    
+                    <p>My own mother, 68, went from using a walker to hiking with her church group.</p>
+                    
+                    <h3>Verified Patient Results:</h3>
+                    
+                    <p><em>"My orthopedic surgeon canceled my knee replacement. Said whatever I'm doing, keep doing it. That was 8 months ago."</em> - Robert K., 54</p>
+                    
+                    <p><em>"Off Celebrex after 5 years. Liver enzymes back to normal. Knees feel better than they have since my 30s."</em> - Marie T., 49</p>
+                    
+                    <p><em>"Danced at my daughter's wedding. No cane. No chair. My family couldn't believe it."</em> - James L., 58</p>
+                    
+                    <img src="kneelanderimages/testimonyt.png" alt="Customer Testimonials - WellKnee Pain Relief Patches" class="article-image" />
+                    
+                    <h2>This Changes Everything About Aging</h2>
+                    
+                    <p>We've accepted that knee pain is inevitable after 40.</p>
+                    
+                    <p>That losing mobility is "normal aging."</p>
+                    
+                    <p>That surgery is the only answer to deterioration.</p>
+                    
+                    <p><strong>This is medically false.</strong></p>
+                    
+                    <p>With proper inflammatory control, knees can remain functional into your 80s and beyond.</p>
+                    
+                    <p>The gap between what's possible and what people accept is measured in decades of unnecessary suffering.</p>
+                    
+                    <p><strong>You've lost years to a problem that takes weeks to address.</strong></p>
+                    
+                    <p>Every patient who comes to me after years of failed treatments says the same thing:</p>
+                    
+                    <p>"Why didn't anyone tell me about this sooner?"</p>
+                    
+                    <p>The answer makes me ashamed of my profession.</p>
+                    
+                    <h2>The Window Is Closing Fast</h2>
+                    
+                    <p>Something unexpected happened after WellKnee launched publicly.</p>
+                    
+                    <p>Professional athletes started buying retail supply. NBA trainers. NFL team doctors. Olympic committees.</p>
+                    
+                    <p>They know what works.</p>
+                    
+                    <p>Current inventory: <span class="inventory-count"><strong>2,300</strong> units remaining from 10,000 unit production.</span></p>
+                    
+                    <p>Next production: 12-16 weeks out.</p>
+                    
+                    <p>WellKnee offers what no one else will: <strong>90-day money-back guarantee.</strong></p>
+                    
+                    <p>They know the science. They know it works.</p>
+                    
+                    <p>Right now: <strong>70% discount for first-time customers.</strong></p>
+                    
+                    <p>Regular price: $59.83<br>
+                    Your price: $17.95<br>
+                    You save: $41.88</p>
+                    
+                    <p>One patch costs less than a single copay. Less than one bottle of Celebrex. Less than parking at the hospital.</p>
+                    
+                    <p><strong>The inflammatory loop is running right now.</strong> Tonight while you sleep. Tomorrow when you walk.</p>
+                    
+                    <p>Every day you wait is more accumulated damage.</p>
+                    
+                    <p><strong>YOU SHOULD KNOW:</strong> For a limited time WellKnee is running <strong>quantity discounts</strong> if you purchase multiple boxes:</p>
+                    <p>Buy 1 box = $17.95 (70% off)<br /> 
+                    Buy 2 boxes = $33.96 (Save even more)<br /> 
+                    Buy 3 boxes = $45.96 (Best value)<br />
+                    Buy 4 boxes = $55.96 (Maximum savings)</p>
+                    <p>WellKnee buyers frequently return to buy extra boxes for all their favorite activities.</p>
+                    <p><strong>Note:</strong> This quantity discount offer can end at any time, so make sure you don't miss it and act now.</p>
+                    <p>And don't forget, WellKnee provides a full refund if you don't find relief with their products.</p>
+                    
+                    <h2>You Have 48 Hours to Decide</h2>
+                    
+                    <p>In 48 hours, this batch will sell out.</p>
+                    
+                    <p>You'll wait 12-16 weeks for the next one.</p>
+                    
+                    <p>That's 12-16 more weeks of:</p>
+                    
+                    <ul>
+                        <li>Pills poisoning your system</li>
+                        <li>Creams that don't work</li>
+                        <li>Nights without sleep</li>
+                        <li>Life passing you by</li>
+                    </ul>
+                    
+                    <p>Or you can do what my patients did.</p>
+                    
+                    <p>What my mother did.</p>
+                    
+                    <p>What I did for my own knees.</p>
+                    
+                    <p><strong>Break the inflammatory loop. Reclaim your mobility. Get your life back.</strong></p>
+                    
+                    <p>The choice seems obvious.</p>
+                    
+                    <p>But only you can make it.</p>
+                    
+                    <a href="https://cycsrd.mcgo2.com/click" class="cta-button" onclick="fbq('track', 'Lead');">Receive a 70% discount if you order today!<br>Get genuine WellKnee only at the official site</a>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h2 class="sidebar-title">#1 Way to Reduce Knee & Joint Pain While Active</h2>
+                
+                <div class="sidebar-product">
+                    <a href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');">
+                        <img src="kneelanderimages/sidebarimage.png" alt="WellKnee Herbal Knee Patch" />
+                    </a>
+                    <p>Get WellKnee Patches for comfortable, productive, and painless days every time.</p>
+                </div>
+                
+                <a href="https://cycsrd.mcgo2.com/click" class="sidebar-cta" onclick="fbq('track', 'Lead');">BUY NOW ➢</a>
+                
+                <div class="featured-on">
+                    <h3>As Seen On</h3>
+                    <div class="featured-logos">
+                        <a href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');"><img src="kneelanderimages/CNBC_Logo_1.png" alt="CNBC" /></a>
+                        <a href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');"><img src="kneelanderimages/Forbes_idvlzRQKLx_1.png" alt="Forbes" /></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-sticky-cta">
+        <a href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');">CLAIM 70% OFF NOW →</a>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SHOP</h4>
+                    <ul>
+                        <li><a href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');">Order Now</a></li>
+                        <li><a href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>INFORMATION</h4>
+                    <ul>
+                        <li><a href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');">Terms of Service</a></li>
+                        <li><a href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');">Privacy Policy</a></li>
+                        <li><a href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');">Shipping Policy</a></li>
+                        <li><a href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>SUPPORT</h4>
+                    <ul>
+                        <li><a href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');">FAQ</a></li>
+                        <li><a href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');">Returns</a></li>
+                        <li><a href="https://cycsrd.mcgo2.com/click" onclick="fbq('track', 'Lead');">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>THIS IS AN ADVERTISEMENT AND NOT AN ACTUAL NEWS ARTICLE, BLOG, OR CONSUMER PROTECTION UPDATE</p>
+                <p>THE STORY DEPICTED ON THIS SITE AND THE PERSON DEPICTED IN THE STORY ARE NOT ACTUAL NEWS. RATHER, THIS STORY IS BASED ON THE RESULTS THAT SOME PEOPLE WHO HAVE USED THESE PRODUCTS HAVE ACHIEVED. THE RESULTS PORTRAYED IN THE STORY AND IN THE COMMENTS ARE ILLUSTRATIVE, AND MAY NOT BE THE RESULTS THAT YOU ACHIEVE WITH THESE PRODUCTS. THIS PAGE COULD RECEIVE COMPENSATION FOR CLICKS ON OR PURCHASE OF PRODUCTS FEATURED ON THIS SITE.</p>
+                <p>Dr. Michael Chen practiced sports medicine in Baltimore 2008-2023. These statements reflect his professional experience and have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease. Results vary. Consult your physician before starting any new treatment.</p>
+            </div>
+        </div>
+    </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $('.headers .mobile-menu').click(function() {
-                $('.headers .mobile-menu').toggleClass('active');
-                $('.headers .mobile-overlay').toggleClass('active');
+        // Dynamic inventory counter
+        function updateInventory() {
+            let remaining = localStorage.getItem('wk_inventory') || 2300;
+            remaining = Math.max(parseInt(remaining) - Math.floor(Math.random() * 3), 1847);
+            localStorage.setItem('wk_inventory', remaining);
+            
+            document.querySelectorAll('.inventory-count strong').forEach(el => {
+                el.innerHTML = remaining.toLocaleString();
             });
+        }
+        
+        // Countdown timer
+        function startCountdown() {
+            const endTime = new Date().getTime() + (2 * 60 * 60 * 1000); // 2 hours
+            setInterval(() => {
+                const now = new Date().getTime();
+                const distance = endTime - now;
+                const hours = Math.floor(distance / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.querySelectorAll('.timer').forEach(el => {
+                    el.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
+                });
+            }, 1000);
+        }
+        
+        // Mobile sticky CTA
+        let scrollThreshold = false;
+        window.addEventListener('scroll', () => {
+            if (!scrollThreshold && window.scrollY > window.innerHeight * 0.3) {
+                scrollThreshold = true;
+                document.querySelector('.mobile-sticky-cta').style.display = 'block';
+            }
+        });
+        
+        // Enhanced Facebook Pixel tracking
+        window.addEventListener('scroll', () => {
+            const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            if (scrollPercent > 50 && !window.fbq50) {
+                window.fbq50 = true;
+                fbq('track', 'ViewContent', {value: 17.95, currency: 'USD'});
+            }
+        });
+        
+        // Initialize features
+        updateInventory();
+        startCountdown();
+        setInterval(updateInventory, 45000); // Update every 45 seconds
+        
+        // Mobile navigation toggle
+        document.querySelector('.nav__toggle').addEventListener('click', function() {
+            document.querySelector('.nav__items').classList.toggle('active');
         });
     </script>
 </body>
